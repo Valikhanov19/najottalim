@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6FAFD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 300px;
+    padding-bottom: 0px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header > div:first-of-type {
+    gap: 60px;
+}
+
+header > div:last-of-type {
+    gap: 25px;
+}
+
+
+.contacts_header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user h2 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header li {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.gray_btn {
+    color: #1DBF73;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: #F2F0FE;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.green_btn {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background:#1DBF73;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+/* createWork */
+
+.createWork {
+    padding: 20px 300px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.createWorks_steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+}
+
+.createWorks_steps h2 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.stepItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    z-index: 1;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    background: #B0AAD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.circle p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    z-index: 1;
+}
+
+.circleActive {
+    width: 64px;
+    height: 64px;
+    background: #1dbf7370;
+    position: relative;
+}
+
+.circleActive > div {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #1DBF73;
+    border-radius: 50%;
+}
+
+.line {
+    width: 779px;
+    height: 3px;
+    background: #B0AAD0;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.createWork_stepOne {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.createWork_stepOne h2 {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.forInputItem {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.forInputItem input {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 9px 20px;
+    padding-top: 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #F2F0FE;
+}
+
+.forInputItem input::placeholder {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.categoryStepOne {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoryStepOne > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.categoryStepOne > div > div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 4px;
+    border-bottom: 1px solid #F2F0FE;
+} 
+
+.categoryStepOne > div span {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.teg {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.teg_block {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #F2F0FE;
+    padding-left: 20px;
+    padding-bottom: 9px;
+}
+
+.teg_item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #EBE8FF;
+    align-items: center;
+    cursor: pointer;
+}
+
+.teg_item p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nextBtn {
+    color: var(--white, #F6FAFD);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--green, #1DBF73);
+    padding: 18px 75px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+
+@media screen and (max-width:1850px) {
+    header {
+        padding: 50px 200px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    header , .createWork {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    header , .createWork {
+        padding: 10px 65px;
+    }
+    
+}
+
+@media screen and (max-width:1430px) {
+    .contacts_header {
+        gap: 16px;
+    }
+    header > div:last-of-type {
+        gap: 20px;
+    }
+    .user h2 {
+        font-size: 12px;
+    }
+    .user img:first-of-type {
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav ul {
+        gap: 35px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    header li {
+        font-size: 14px;
+    }
+    .gray_btn {
+        font-size: 14px;
+    }
+    .green_btn {
+        font-size: 14px;
+    }
+    header nav ul {
+        gap: 24px;
+    }
+}
+

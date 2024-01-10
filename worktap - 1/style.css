@@ -1,0 +1,613 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 300px;
+    background: #F7F6FF;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div:first-of-type {
+    gap: 60px;
+}
+
+header div:last-of-type {
+    gap: 30px;
+}
+
+header li {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.gray_btn {
+    color: #1DBF73;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: #F2F0FE;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.green_btn {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background:#1DBF73;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+main {
+    padding: 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    background: #F7F6FF;
+}
+
+main > div {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+main > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main h2 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+main h2 span {
+    color: #1DBF73;
+}
+
+main p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main form {
+    /* width: 80%; */
+    border-radius: 50px;
+    background: #F2F0FE;
+    display: flex;
+    justify-content: space-between;
+}
+
+main form input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #656084;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: none;
+    padding: 20px;
+}
+
+main form button {
+    color:#F6FAFD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    border: 3px solid #F2F0FE;
+    background: #FBA457;
+    padding: 20px 50px;
+}
+
+main h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main > div > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main > div > div > div > div {
+    display: flex;
+    gap: 20px;
+}
+
+main > div > div > div > div button {
+    border-radius: 50px;
+    border: 1px solid #F2F0FE;
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    padding: 10px 20px;
+}
+
+
+main div .allCategory {
+    color: #FBA457;
+    border: 1px solid #FBA457;
+}
+
+.currentWorks {
+    padding: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.currentWorks h2 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.currentWorks > div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.currentWorks > div > div {
+    border-radius: 20px;
+    border: 1px solid #F2F0FE;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    transition: .3s;
+}
+
+.currentWorks > div > div p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.currentWorks > div > div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #F2F0FE;
+}
+
+.currentWorks > div > div:last-of-type h5 {
+    color: var(--green, #1DBF73);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.currentWorks h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.currentWorks_item-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.currentWorks button {
+    width: 100%;
+    color: #1DBF73;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid #1DBF73;
+    background: none;
+    padding: 12px;
+    transition: .3s;
+}
+
+.topFrilanceritem_top {
+    display: flex;
+    gap: 30px;
+}
+
+.topFrilanceritem_top div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topFrilanceritem_top h4 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.topFrilanceritem_top h6 {
+    color: #FBA457;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.topFrilanceritem_top span {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.howtoSolve {
+    padding: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.howtoSolve_top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.howtoSolve_top h2 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.howtoSolve_top h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.howtoSolve_bottom {
+    display: flex;
+    gap: 60px;
+}
+
+.howtoSolve_bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.howtoSolve_bottom h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.howtoSolve_bottom p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.howtoSolve_bottom img {
+    width: 83px;
+    height: 83px;
+}
+
+.helpBussines {
+    background: linear-gradient(180deg, #E2A401 -1.38%, #E6A901 17.18%, #E3A401 28.99%, #E5A800 43.17%, #EEB301 77.27%, #EFB400 100%);
+}
+
+.helpBussines_filter {
+    background: url(img/workspace-with-office-supplies\ 1.png) 100% 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 50px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.helpBussines h2 {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.helpBussines h3 {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.helpBussines button {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    border-radius: 50px;
+    background: #5E4EDB;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    width: fit-content;
+}
+
+.helpBussines_filter > div {
+    width: 533px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.helpBussines_filter div p {
+    color:#222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.helpBussines_filter div div {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #F6FAFD;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.04);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 300px;
+    padding-bottom: 100px;
+    background: #F2F0FE;
+}
+
+footer h6 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    align-self: center;
+}
+
+footer h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+footer p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.foot div div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div .subs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media screen and (max-width:1850px) {
+    header , .helpBussines_filter {
+        padding: 50px 200px;
+    }
+    main , .currentWorks , .howtoSolve {
+        padding: 100px 200px;
+    }
+    footer {
+        padding: 50px 200px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    header , .helpBussines_filter {
+        padding: 50px 100px;
+    }
+    main , .currentWorks , .howtoSolve {
+        padding: 100px;
+    }
+    footer {
+        padding: 50px 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    header , .helpBussines_filter {
+        padding: 50px 65px;
+    }
+    main , .currentWorks , .howtoSolve {
+        padding: 100px 65px;
+    }
+    footer {
+        padding: 50px 65px;
+        padding-bottom: 100px;
+    }
+
+    .topFrilanceritem_top h4 {
+        font-size: 14px;
+    }
+    .topFrilanceritem_top h6 {
+        font-size: 16px;    
+    }
+    .topFrilanceritem_top span {
+        font-size: 12px;
+    }
+    .currentWorks h3 {
+        font-size: 16px;
+    }
+    .currentWorks > div > div p {
+        font-size: 12px;
+    }
+    main h2 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 16px;
+    }
+    .topFrilanceritem_top > img {
+        width: 100px;
+        height: 100px;
+    }
+    .currentWorks > div > div:last-of-type h5 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .currentWorks > div > div:last-of-type h5 {
+        font-size: 14px;
+    }
+    header li {
+        font-size: 14px;
+    }
+    .gray_btn {
+        font-size: 14px;
+    }
+    .green_btn {
+        font-size: 14px;
+    }
+    header nav ul {
+        gap: 25px;
+    }
+}

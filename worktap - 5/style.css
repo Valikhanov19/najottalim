@@ -1,0 +1,493 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.birja_head {
+    border: 1px solid var(--super-light-gray, #F7F6FF);
+    background: var(--white, #F6FAFD);
+    box-shadow: 0px 16px 16px 0px rgba(34, 34, 34, 0.04);
+    padding: 20px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.birja_top form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: var(--light-gray, #F2F0FE);
+}
+
+.birja_top form button {
+    color: var(--white, #F6FAFD);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    border: 3px solid var(--light-gray, #F2F0FE);
+    background: var(--orange, #FBA457);
+    padding: 20px 50px;
+}
+
+.birja_top input {
+    color: var(--dark-gray, #656084);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: none;
+    border: none;
+    padding: 20px;
+}
+
+.birja_top input::placeholder {
+    color: var(--dark-gray, #656084);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birja_head-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.birja_head-btns p {
+    color: var(--green, #1DBF73);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.birja_head-btns button {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid var(--light-gray, #F2F0FE);
+    padding: 10px 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.birja_head-btns .allCategory {
+    color: var(--orange, #FBA457);
+    border: 1px solid var(--orange, #FBA457);
+}
+
+
+/*  */
+
+.birja {
+    padding: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.birja_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.birja_top h2 {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.birja_top > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.cost {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.cost span {
+    color: var(--dark-gray, #656084);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray, #F2F0FE);
+}
+
+.birja_top button {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--light-gray, #F2F0FE);
+    cursor: pointer;
+}
+
+.birja_block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.birja_item {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #F2F0FE;
+    background: #F6FAFD;
+}
+
+.birja_item_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.birja_item_top h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.birja_item_top h3 {
+    color: var(--green, #1DBF73);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.birja_item > p {
+    color: var(--dark-gray, #656084);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.birja_item_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.birja_item_bottom span {
+    color: var(--dark-gray, #656084);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.birja_item_bottom > div {
+    display: flex;
+    gap: 20px;
+}
+
+.birja_item_bottom > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.birja_item_bottom > div > div > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.birja_item_bottom > div > div p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;   
+}
+
+.birja_item_bottom > div > div h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birja_item_bottom > div > div h3 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birja_grnBtn {
+    color: var(--green, #1DBF73);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 40px;
+    border: 1px solid var(--green, #1DBF73);
+    padding: 16px 48px;
+    background: none;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 300px;
+    padding-bottom: 100px;
+    background: #F2F0FE;
+}
+
+footer h6 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    align-self: center;
+}
+
+footer h3 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+footer p {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.foot div div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div .subs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media screen and (max-width:1850px) {
+    .birja_head {
+        padding: 20px 200px;
+    }
+    header , .helpBussines_filter {
+        padding: 50px 200px;
+    }
+    main , .currentWorks , .howtoSolve , .birja {
+        padding: 100px 200px;
+    }
+    footer {
+        padding: 50px 200px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .birja_head {
+        padding: 20px 100px;
+    }
+    header , .helpBussines_filter {
+        padding: 50px 100px;
+    }
+    main , .currentWorks , .howtoSolve , .birja {
+        padding: 100px;
+    }
+    footer {
+        padding: 50px 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .birja_head {
+        padding: 20px 65px;
+    }
+    header , .helpBussines_filter {
+        padding: 50px 65px;
+    }
+    main , .currentWorks , .howtoSolve , .birja {
+        padding: 100px 65px;
+    }
+    footer {
+        padding: 50px 65px;
+        padding-bottom: 100px;
+    }
+
+    .topFrilanceritem_top h4 {
+        font-size: 14px;
+    }
+    .topFrilanceritem_top h6 {
+        font-size: 16px;    
+    }
+    .topFrilanceritem_top span {
+        font-size: 12px;
+    }
+    .currentWorks h3 {
+        font-size: 16px;
+    }
+    .currentWorks > div > div p {
+        font-size: 12px;
+    }
+    main h2 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 16px;
+    }
+    .topFrilanceritem_top > img {
+        width: 100px;
+        height: 100px;
+    }
+    .currentWorks > div > div:last-of-type h5 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1430px) {
+    .contacts_header {
+        gap: 16px;
+    }
+    header > div:last-of-type {
+        gap: 20px;
+    }
+    .user h2 {
+        font-size: 12px;
+    }
+    .user img:first-of-type {
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav ul {
+        gap: 35px;
+    }
+    .birja_top > div {
+        gap: 15px;
+    }
+
+    .birja_top button {
+        font-size: 16px;
+    }
+    .birja_top form button {
+        padding: 20px 35px;
+    }
+    .cost {
+        gap: 4px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .currentWorks > div > div:last-of-type h5 {
+        font-size: 14px;
+    }
+    header li {
+        font-size: 14px;
+    }
+    .gray_btn {
+        font-size: 14px;
+    }
+    .green_btn {
+        font-size: 14px;
+    }
+    header nav ul {
+        gap: 24px;
+    }
+    .birja_top > div {
+        gap: 7px;
+    }
+}
+

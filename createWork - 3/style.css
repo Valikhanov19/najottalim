@@ -1,0 +1,470 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #F6FAFD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 300px;
+    padding-bottom: 0px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header > div:first-of-type {
+    gap: 60px;
+}
+
+header > div:last-of-type {
+    gap: 25px;
+}
+
+
+.contacts_header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user h2 {
+    color: #222;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header li {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.gray_btn {
+    color: #1DBF73;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: #F2F0FE;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.green_btn {
+    color: #F6FAFD;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background:#1DBF73;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+/* createWork */
+
+.createWork {
+    padding: 20px 300px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.createWorks_steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+}
+
+.createWorks_steps h2 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.stepItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    z-index: 1;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    background: #B0AAD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.circle p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    z-index: 1;
+}
+
+.circleActive {
+    width: 64px;
+    height: 64px;
+    background: #1dbf7370;
+    position: relative;
+}
+
+.circleActive > div {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #1DBF73;
+    border-radius: 50%;
+}
+
+.grnCircle {
+    background: #1DBF73;
+}
+
+.line {
+    width: 779px;
+    height: 3px;
+    background: linear-gradient(to right, #1DBF73 349px, #B0AAD0 349px);
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.forCW_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nextBtn {
+    color: var(--white, #F6FAFD);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--green, #1DBF73);
+    padding: 18px 75px;
+    border: none;
+    cursor: pointer;
+}
+
+.prevBtn {
+    color: var(--dark-gray, #656084);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--light-gray, #F2F0FE);
+    padding: 18px 0px;
+    width: 240px;
+    border: none;
+}
+
+.createWork_stepTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.createWork_stepTwo h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.createWork_stepTwo h3 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.createWork_stepTwo > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.createWork_stepTwo-block1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.createWork_stepTwo-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray, #F2F0FE);
+} 
+
+.createWork_stepTwo-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.createWork_stepTwo-item h2 {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.createWork_stepTwo-item input {
+    padding-left: 18px;
+    padding-bottom: 9px;
+    border: none;
+    border-bottom: 1px solid #F2F0FE;
+    outline: none;
+    background: none;
+}
+
+.createWork_stepTwo-item input::placeholder {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.createWork_stepTwo-item .textarea {
+    padding-bottom: 80px;
+}
+
+.addOption {
+    color: var(--dark-gray, #656084);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--medium-gray, #EBE8FF);
+    padding: 18px 0px;
+    width: 100%;
+    border: none;
+}
+
+.createWork_stepTwo-item .twoInputs {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.deleteBtn {
+    color: #FF4343;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 18px 0px;
+    border-radius: 50px;
+    background: var(--light-red, #FFDBDB);
+    border: none;
+}
+
+.additionalOptions {
+    display: flex;
+    gap: 30px;
+}
+
+.addOptions {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--medium-gray, #EBE8FF);
+    background: var(--light-gray, #F2F0FE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addOptions h4 {
+    cursor: pointer;
+    color: var(--orange, #FBA457);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.addOptions svg {
+    cursor: pointer;
+}
+
+.Description {
+    width: 758px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Description > div {
+    border-radius: 10px;
+    background: var(--medium-gray, #EBE8FF);
+    padding: 4px 16px;
+    display: flex;
+    gap: 24px;
+}
+
+.Description img {
+    cursor: pointer;
+}
+
+.Description textarea {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #F2F0FE;
+    outline: none;
+    background: none;
+}
+
+.Description textarea::placeholder {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+
+@media screen and (max-width:1850px) {
+    header {
+        padding: 50px 200px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    header , .createWork {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    header , .createWork {
+        padding: 10px 65px;
+    }
+    
+}
+
+@media screen and (max-width:1430px) {
+    .contacts_header {
+        gap: 16px;
+    }
+    header > div:last-of-type {
+        gap: 20px;
+    }
+    .user h2 {
+        font-size: 12px;
+    }
+    .user img:first-of-type {
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav ul {
+        gap: 35px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    header li {
+        font-size: 14px;
+    }
+    .gray_btn {
+        font-size: 14px;
+    }
+    .green_btn {
+        font-size: 14px;
+    }
+    header nav ul {
+        gap: 24px;
+    }
+}
+

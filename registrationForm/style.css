@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registerForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerRight {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/marek-levak-eHL0KfDgQRs-unsplash\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+    gap: 40px;
+}
+
+.registerRight p {
+    padding: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.12);
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.registerRight div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sign {
+    width: 50%;
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+.sign p {
+    color: var(--800, #2D3748);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sign h2 {
+    color: var(--900, #1A202C);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.for_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.inputBlock input {
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #B0AAD0;
+}
+
+.inputBlock input::placeholder {
+    color: var(--gray, #B0AAD0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sign h4 {
+    color: var(--black, #222);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.forgetPasswordDiv {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgetPasswordDiv div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.forgetPasswordDiv label {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sign span {
+    color: var(--orange, #FBA457);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.greenBtn {
+    background: #04C35C;
+}
+
+.blueBtn {
+    background: #2D3748;
+}
+
+.signUp {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    display: none;
+}
+
+.signS {
+    width: 540px;
+}
+
+.sendCode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.changePassword {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.signIn , .signUp , .sendCode , .changePassword {
+    display: none;
+}
+
+.signIn {
+    display: flex;
+}
+
+
+@media screen and (max-width:1750px) {
+    .sign {
+        padding-left: 200px;
+    }
+    .logo {
+        left: 200px;
+    }
+    .registerRight p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:1550px) {
+    .sign {
+        padding-left: 100px;
+    }
+    .logo {
+        left: 100px;
+    }
+    .registerRight p {
+        font-size: 16px;
+    }
+    .signS {
+        width: 400px;
+    }
+}
